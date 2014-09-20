@@ -1,0 +1,191 @@
+<!doctype html>
+<!--
+Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<html>
+<head>
+  <title>at-core-drawer</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="../platform/platform.js"></script>
+
+  <link rel="import" href="at-core-drawer.html">
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #B99588;
+    }
+
+    [drawer] {
+      background-color: #B99588;
+      border-right: 1px solid #ccc;
+    }
+
+    [main] {            
+      background-color:lightgreen;
+    }
+
+    button {
+      display: none;
+      width: 160px;
+      height: 40px;
+      font-size: 16px;
+      margin: 8px;
+    }
+
+    at-core-drawer[narrow] button {
+      display: inline-block;
+    }
+
+    at-core-drawer {
+      background-color:lightgoldenrodyellow;      
+    }
+
+
+    at-core-drawer[narrow] {
+      background-color: lightblue;
+      overflow: hidden;
+    }
+  </style>
+
+</head>
+
+<body unresolved>
+
+  <at-core-drawer>
+
+    <div drawer>
+      <ul>
+        <li>START</li>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li><hr /></li>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li><hr /></li>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li><hr /></li>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li><hr /></li>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li><hr /></li>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li><hr /></li>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li><hr /></li>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li><hr /></li>
+
+        <li>END</li>
+
+      </ul>
+
+    </div>
+
+    <div main>
+      <button onclick="document.querySelector('at-core-drawer').togglePanel();">toggle drawer</button>
+      <div id="page-content">
+        <footer>Footer</footer>
+        <p>
+          1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          10 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          11 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          13 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          14 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          15 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          16 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          17 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          18 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          19 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+        <p>
+          20 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas et odio ut eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget commodo ligula, non pretium nibh. Aenean sed nibh a nunc pharetra vehicula. Nullam nec ipsum felis. Praesent sodales metus justo, sed dignissim justo consequat vel. Quisque congue malesuada eleifend. Duis ut velit et enim adipiscing ultrices. Curabitur ornare cursus tortor sit amet sollicitudin.
+        </p>
+      </div>
+    </div>
+
+  </at-core-drawer>
+
+</body>
+</html>
